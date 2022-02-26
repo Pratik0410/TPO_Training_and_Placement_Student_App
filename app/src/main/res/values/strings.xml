@@ -2,8 +2,18 @@
     <string name="app_name">TPO_Training_and_Placement_Student</string>
     <string name="email_text">Email</string>
     <string name="password_text">Password</string>
+    <string name="forgot_text">Forgot</string>
+    <string name="password_with_question_mark_text">Password?</string>
+    <string name="forgot_password_quote_text">Don\'t worry! It happens. Please enter the address associated with your account. </string>
     <string name="login_text">Login</string>
     <string name="forgot_password_text">Forgot Password?</string>
     <string name="sign_up_text">Sign Up</string>
     <string name="dont_have_an_account_text">Don\'t have an account?</string>
+    <string name="student_name_text">Student Name</string>
+    <string name="phone_no_text">Phone no.</string>
+    <string name="select_branch_text">Select Branch</string>
+    <string name="confirm_password_text">Confirm Password</string>
+    <string name="student_image_content_description">Student Image</string>
+    <string name="already_have_an_account_text">Already have an account?</string>
+    <string name="submit_button_text">Submit</string>
 </resources>
