@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/id_constraint_layout_in_activity_sign_up"
     tools:context=".activities.SignUpActivity">
 
     <ImageView
@@ -46,7 +47,7 @@
                 android:textStyle="bold" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
+                android:id="@+id/id_profile_image_view_in_activity_sign_up"
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:layout_gravity="center"
@@ -68,7 +69,6 @@
                 android:fontFamily="@font/abhaya_libre"
                 android:hint="@string/student_name_text"
                 app:boxStrokeColor="@color/black"
-                app:endIconMode="custom"
                 app:hintTextColor="@color/black"
                 app:startIconDrawable="@drawable/ic_student_name">
 
@@ -80,7 +80,7 @@
                     android:inputType="textPersonName"
                     android:minHeight="48dp"
                     android:padding="15dp"
-                    android:textColorHint="#A63A3535"
+                    android:textColorHint="@color/black"
                     android:textCursorDrawable="@color/black"
                     android:textSize="20sp"
                     app:boxStrokeColor="@color/black" />
@@ -98,7 +98,6 @@
                 android:fontFamily="@font/abhaya_libre"
                 android:hint="@string/email_text"
                 app:boxStrokeColor="@color/black"
-                app:endIconMode="custom"
                 app:hintTextColor="@color/black"
                 app:startIconDrawable="@drawable/ic_email">
 
@@ -107,10 +106,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/abhaya_libre"
-                    android:inputType="textPersonName"
+                    android:inputType="textEmailAddress"
                     android:minHeight="48dp"
                     android:padding="15dp"
-                    android:textColorHint="#A63A3535"
+                    android:textColorHint="@color/black"
                     android:textCursorDrawable="@color/black"
                     android:textSize="20sp"
                     app:boxStrokeColor="@color/black" />
@@ -128,7 +127,6 @@
                 android:fontFamily="@font/abhaya_libre"
                 android:hint="@string/phone_no_text"
                 app:boxStrokeColor="@color/black"
-                app:endIconMode="custom"
                 app:hintTextColor="@color/black"
                 app:startIconDrawable="@drawable/ic_phone_no">
 
@@ -137,10 +135,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/abhaya_libre"
-                    android:inputType="textMultiLine"
+                    android:inputType="phone"
                     android:minHeight="48dp"
                     android:padding="15dp"
-                    android:textColorHint="#A63A3535"
+                    android:textColorHint="@color/black"
                     android:textCursorDrawable="@color/black"
                     android:textSize="20sp"
                     app:boxStrokeColor="@color/black" />
@@ -161,7 +159,7 @@
                 app:startIconDrawable="@drawable/ic_select_branch">
 
                 <AutoCompleteTextView
-                    android:id="@+id/id_select_company_auto_complete_textview_in_activity_edit_placement_history"
+                    android:id="@+id/id_select_branch_auto_complete_textview_in_activity_sign_up"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/abhaya_libre"
@@ -184,8 +182,8 @@
                 android:fontFamily="@font/abhaya_libre"
                 android:hint="@string/password_text"
                 app:boxStrokeColor="@color/black"
-                app:endIconMode="custom"
                 app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true"
                 app:startIconDrawable="@drawable/ic_password">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -193,10 +191,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/abhaya_libre"
-                    android:inputType="textMultiLine"
+                    android:inputType="textPassword"
                     android:minHeight="48dp"
                     android:padding="15dp"
-                    android:textColorHint="#A63A3535"
+                    android:textColorHint="@color/black"
                     android:textCursorDrawable="@color/black"
                     android:textSize="20sp"
                     app:boxStrokeColor="@color/black" />
@@ -214,8 +212,8 @@
                 android:fontFamily="@font/abhaya_libre"
                 android:hint="@string/confirm_password_text"
                 app:boxStrokeColor="@color/black"
-                app:endIconMode="custom"
                 app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true"
                 app:startIconDrawable="@drawable/ic_confirm_password">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -223,10 +221,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/abhaya_libre"
-                    android:inputType="textMultiLine"
+                    android:inputType="textPassword"
                     android:minHeight="48dp"
                     android:padding="15dp"
-                    android:textColorHint="#A63A3535"
+                    android:textColorHint="@color/black"
                     android:textCursorDrawable="@color/black"
                     android:textSize="20sp"
                     app:boxStrokeColor="@color/black" />
