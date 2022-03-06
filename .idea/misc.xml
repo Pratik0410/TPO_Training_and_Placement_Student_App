@@ -3,12 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ketaki/Desktop/TPO_Training_and_Placement_Student/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1345" />
-        <entry key="..\:/Users/ketaki/Desktop/TPO_Training_and_Placement_Student/app/src/main/res/drawable/ic_select_branch.xml" value="0.1345" />
-        <entry key="..\:/Users/ketaki/Desktop/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_forgot_password.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ketaki/Desktop/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Users/ketaki/Desktop/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ketaki/Desktop/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Downloads/TPO_Training_and_Placement_Student/app/src/main/res/drawable/circle_indicator.xml" value="0.1485" />
+        <entry key="..\:/Downloads/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_forgot_password.xml" value="0.17028985507246377" />
+        <entry key="..\:/Downloads/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_login.xml" value="0.17028985507246377" />
+        <entry key="..\:/Downloads/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Downloads/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Downloads/TPO_Training_and_Placement_Student/app/src/main/res/layout/dropdownlist_item.xml" value="0.19635416666666666" />
+        <entry key="..\:/Downloads/TPO_Training_and_Placement_Student/app/src/main/res/layout/model_banner.xml" value="0.1852355072463768" />
+        <entry key="..\:/Java Applications/TPO_Training_and_Placement_Student/app/src/main/res/drawable/upper_color.xml" value="0.142" />
+        <entry key="..\:/Java Applications/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Java Applications/TPO_Training_and_Placement_Student/app/src/main/res/layout/activity_main.xml" value="0.18229166666666666" />
       </map>
     </option>
   </component>
