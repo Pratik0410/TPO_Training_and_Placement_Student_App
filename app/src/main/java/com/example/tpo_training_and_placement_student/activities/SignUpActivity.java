@@ -38,7 +38,7 @@ import java.util.Objects;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    public String[] branchArray = {"AI/ML","CE","CH","CM","IT","ME","EJ"};
+    public String[] branchArray = {"AI/ML", "CE", "CH", "CM", "IT", "ME", "EJ"};
     public ImageView arrowBackImageView;
     public TextView loginTextView;
     public Button signUpButton;
@@ -76,7 +76,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         loginTextView.setOnClickListener(view -> finish());
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(SignUpActivity.this,R.layout.dropdownlist_item,branchArray);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(SignUpActivity.this, R.layout.dropdownlist_item, branchArray);
         branchAutoCompleteTextView.setAdapter(arrayAdapter);
 
         branchAutoCompleteTextView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -84,6 +84,7 @@ public class SignUpActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 branch = position;
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -93,11 +94,10 @@ public class SignUpActivity extends AppCompatActivity {
                 .withPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
                 .withListener(new PermissionListener() {
                     @Override
-                    public void onPermissionGranted(PermissionGrantedResponse response)
-                    {
-                        Intent intent=new Intent(Intent.ACTION_PICK);
+                    public void onPermissionGranted(PermissionGrantedResponse response) {
+                        Intent intent = new Intent(Intent.ACTION_PICK);
                         intent.setType("image/*");
-                        startActivityForResult(Intent.createChooser(intent,"Please select Image"),1);
+                        startActivityForResult(Intent.createChooser(intent, "Please select Image"), 1);
                     }
 
                     @Override
@@ -107,7 +107,7 @@ public class SignUpActivity extends AppCompatActivity {
 
                     @Override
                     public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                            token.continuePermissionRequest();
+                        token.continuePermissionRequest();
                     }
                 }).check());
 
@@ -119,53 +119,49 @@ public class SignUpActivity extends AppCompatActivity {
             DatabaseReference databaseReference = firebaseDatabase.getReference().child("Student Request");
             StorageReference storageReference = firebaseStorage.getReference().child("Student Profile").child(Objects.requireNonNull(studentNameTextInputEditText.getText()).toString());
 
-            if(Objects.requireNonNull(studentNameTextInputEditText.getText()).toString().length() != 0 &&
+            if (Objects.requireNonNull(studentNameTextInputEditText.getText()).toString().length() != 0 &&
                     Objects.requireNonNull(emailTextInputEditText.getText()).toString().length() != 0 &&
                     Objects.requireNonNull(phoneNumberTextInputEditText.getText()).toString().length() != 0 &&
                     branchAutoCompleteTextView.getText().toString().length() != 0 &&
                     Objects.requireNonNull(passwordTextInputEditText.getText()).toString().length() != 0 &&
                     Objects.requireNonNull(confirmPasswordTextInputEditText.getText()).toString().length() != 0
-            ){
+            ) {
 
                 if (flagToCheckUploadingImage == 5) {
                     storageReference.putFile(filepath)
                             .addOnSuccessListener(taskSnapshot -> {
-                                Task<Uri> result =taskSnapshot.getStorage().getDownloadUrl();
+                                Task<Uri> result = taskSnapshot.getStorage().getDownloadUrl();
                                 result.addOnSuccessListener(uri -> {
-                                    if (phoneNumberTextInputEditText.getText().toString().length() == 10){
-                                        if (passwordTextInputEditText.getText().toString().equals(confirmPasswordTextInputEditText.getText().toString())){
-                                            Map<String,String> map = new HashMap<>();
-                                            map.put("StudentImage",uri.toString());
+                                    if (phoneNumberTextInputEditText.getText().toString().length() == 10) {
+                                        if (passwordTextInputEditText.getText().toString().equals(confirmPasswordTextInputEditText.getText().toString())) {
+                                            Map<String, String> map = new HashMap<>();
+                                            map.put("StudentImage", uri.toString());
                                             map.put("StudentName", Objects.requireNonNull(studentNameTextInputEditText.getText()).toString());
                                             map.put("Email", Objects.requireNonNull(emailTextInputEditText.getText()).toString());
                                             map.put("PhoneNumber", Objects.requireNonNull(phoneNumberTextInputEditText.getText()).toString());
-                                            map.put("Branch",branchAutoCompleteTextView.getText().toString());
-                                            map.put("Password",passwordTextInputEditText.getText().toString());
-                                            map.put("ConfirmPassword",confirmPasswordTextInputEditText.getText().toString());
+                                            map.put("Branch", branchAutoCompleteTextView.getText().toString());
+                                            map.put("Password", passwordTextInputEditText.getText().toString());
+                                            map.put("ConfirmPassword", confirmPasswordTextInputEditText.getText().toString());
                                             databaseReference.child(studentNameTextInputEditText.getText().toString()).setValue(map);
                                             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SignUpActivity.this);
                                             alertDialogBuilder.setTitle("Request Sent").setMessage("Your request has been sent to admin. You will be notified after admin accepts the request and you will be able to login");
                                             alertDialogBuilder.setCancelable(false);
-                                            alertDialogBuilder.setPositiveButton("OK", (dialogInterface, i) ->{
-                                                Snackbar.make(constraintLayout,"Request Sent Successfully",Snackbar.LENGTH_SHORT).show();
+                                            alertDialogBuilder.setPositiveButton("OK", (dialogInterface, i) -> {
+                                                Snackbar.make(constraintLayout, "Request Sent Successfully", Snackbar.LENGTH_SHORT).show();
                                                 finish();
                                             });
                                             AlertDialog alertDialog = alertDialogBuilder.create();
                                             alertDialog.show();
-                                        }
-                                        else
-                                            Snackbar.make(constraintLayout,"Password Mismatch",Snackbar.LENGTH_SHORT).show();
-                                    }
-                                    else
+                                        } else
+                                            Snackbar.make(constraintLayout, "Password Mismatch", Snackbar.LENGTH_SHORT).show();
+                                    } else
                                         Snackbar.make(constraintLayout, "Please enter valid phone number", Snackbar.LENGTH_SHORT).show();
                                 });
                             });
-                }
-                else{
+                } else {
                     Snackbar.make(constraintLayout, "Please Select Image", Snackbar.LENGTH_SHORT).show();
                 }
-            }
-            else {
+            } else {
                 Snackbar.make(constraintLayout, "Please fill all the details", Snackbar.LENGTH_SHORT).show();
             }
         });
@@ -173,20 +169,16 @@ public class SignUpActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data)
-    {
-        if(requestCode==1 && resultCode==RESULT_OK)
-        {
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == 1 && resultCode == RESULT_OK) {
             assert data != null;
-            filepath=data.getData();
-            try
-            {
-                InputStream inputStream=getContentResolver().openInputStream(filepath);
-                bitmap= BitmapFactory.decodeStream(inputStream);
+            filepath = data.getData();
+            try {
+                InputStream inputStream = getContentResolver().openInputStream(filepath);
+                bitmap = BitmapFactory.decodeStream(inputStream);
                 profileImageView.setImageBitmap(bitmap);
-                flagToCheckUploadingImage =5;
-            }catch (Exception ex)
-            {
+                flagToCheckUploadingImage = 5;
+            } catch (Exception ex) {
                 //pass
             }
         }
@@ -196,7 +188,7 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(SignUpActivity.this,R.layout.dropdownlist_item,branchArray);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(SignUpActivity.this, R.layout.dropdownlist_item, branchArray);
         branchAutoCompleteTextView.setAdapter(arrayAdapter);
     }
 
