@@ -1,6 +1,7 @@
 package com.example.tpo_training_and_placement_student.activities;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import android.Manifest;
@@ -116,7 +117,7 @@ public class SignUpActivity extends AppCompatActivity {
             FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
             FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
             DatabaseReference databaseReference = firebaseDatabase.getReference().child("Student Request");
-            StorageReference storageReference = firebaseStorage.getReference().child("Student Request");
+            StorageReference storageReference = firebaseStorage.getReference().child("Student Profile").child(Objects.requireNonNull(studentNameTextInputEditText.getText()).toString());
 
             if(Objects.requireNonNull(studentNameTextInputEditText.getText()).toString().length() != 0 &&
                     Objects.requireNonNull(emailTextInputEditText.getText()).toString().length() != 0 &&
@@ -142,8 +143,15 @@ public class SignUpActivity extends AppCompatActivity {
                                             map.put("Password",passwordTextInputEditText.getText().toString());
                                             map.put("ConfirmPassword",confirmPasswordTextInputEditText.getText().toString());
                                             databaseReference.child(studentNameTextInputEditText.getText().toString()).setValue(map);
-                                            Snackbar.make(constraintLayout,"Registered Successfully",Snackbar.LENGTH_SHORT).show();
-                                            finish();
+                                            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SignUpActivity.this);
+                                            alertDialogBuilder.setTitle("Request Sent").setMessage("Your request has been sent to admin. You will be notified after admin accepts the request and you will be able to login");
+                                            alertDialogBuilder.setCancelable(false);
+                                            alertDialogBuilder.setPositiveButton("OK", (dialogInterface, i) ->{
+                                                Snackbar.make(constraintLayout,"Request Sent Successfully",Snackbar.LENGTH_SHORT).show();
+                                                finish();
+                                            });
+                                            AlertDialog alertDialog = alertDialogBuilder.create();
+                                            alertDialog.show();
                                         }
                                         else
                                             Snackbar.make(constraintLayout,"Password Mismatch",Snackbar.LENGTH_SHORT).show();
