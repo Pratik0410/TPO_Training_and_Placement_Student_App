@@ -16,4 +16,13 @@
     <string name="student_image_content_description">Student Image</string>
     <string name="already_have_an_account_text">Already have an account?</string>
     <string name="submit_button_text">Submit</string>
+    <string name="hello_text">Hello</string>
+    <string name="company_name_text">Company Name</string>
+    <string name="package_text">Package</string>
+    <string name="designation_text">Designation</string>
+    <string name="training_text">Training</string>
+    <string name="placement_text">Placement</string>
+    <string name="opportunity_text">Opportunity</string>
+    <string name="history_text">History</string>
+
 </resources>
