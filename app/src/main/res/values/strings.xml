@@ -24,5 +24,6 @@
     <string name="placement_text">Placement</string>
     <string name="opportunity_text">Opportunity</string>
     <string name="history_text">History</string>
+    <string name="arrow_back_image_in_activity_forgot_password">Arrow Back Image in Forgot Password Activity</string>
 
 </resources>
