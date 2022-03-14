@@ -50,7 +50,7 @@
         app:startIconDrawable="@drawable/ic_email">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/id_username"
+            android:id="@+id/id_email_edit_text_in_activity_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/abhaya_libre"
@@ -82,7 +82,7 @@
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/id_password"
+            android:id="@+id/id_password_edit_text_in_activity_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
