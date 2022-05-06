@@ -25,5 +25,43 @@
     <string name="opportunity_text">Opportunity</string>
     <string name="history_text">History</string>
     <string name="arrow_back_image_in_activity_forgot_password">Arrow Back Image in Forgot Password Activity</string>
+    <string name="notice_text">Notice</string>
+    <string name="list_of_text">List of</string>
+    <string name="company_text">Company</string>
+    <string name="view_all_text">View All</string>
+    <string name="list_of_company_text">List of Company</string>
+    <string name="placement_opportunities_text">Placement Opportunity</string>
+    <string name="pre_placement_text">Pre-Placement</string>
+    <string name="placement_history_text">Placement History</string>
+    <string name="logout_text">Logout</string>
+    <string name="branch_text">Branch</string>
+    <string name="save_details_button">Save Details</string>
+    <string name="type_of_company_text">Type of Company</string>
+    <string name="product_or_service_of_company_text">Product/Service of Company</string>
+    <string name="about_text">About</string>
+    <string name="contact_details_text">Contact Details</string>
+    <string name="companies_text">Companies</string>
+    <string name="Role_text">Role</string>
+    <string name="location_text">Location</string>
+    <string name="summary_text">Summary</string>
+    <string name="key_qualification_text">Key Qualification</string>
+    <string name="job_description_text">Job Description</string>
+    <string name="additional_requirements_text">Additional Requirements</string>
+    <string name="link_for_applying_text">Link for Applying</string>
+    <string name="about_the_company_or_organization_text">About the Company/Organization</string>
+    <string name="content_of_training_text">Content of Training</string>
+    <string name="eligibility_criteria_text">Eligibility Criteria</string>
+    <string name="training_duration_text">Training Duration</string>
+    <string name="training_charges_text">Training Charges</string>
+    <string name="registration_date_text">Registration Date</string>
+    <string name="last_date_of_registration_text">Last Date of Registration</string>
+    <string name="passing_year_text">Passing year</string>
+    <string name="position_text">Position</string>
+    <string name="change_password_text">Change Password</string>
+    <string name="change_text">Change</string>
+    <string name="new_password_text">New Password</string>
+    <string name="confirm_new_password_text">Confirm New Password</string>
+    <string name="notification_text">Notification</string>
+
 
 </resources>

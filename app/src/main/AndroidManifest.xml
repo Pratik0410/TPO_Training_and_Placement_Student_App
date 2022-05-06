@@ -2,9 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tpo_training_and_placement_student">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -14,6 +13,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TPO_Training_and_Placement_Student">
+        <activity
+            android:name=".ui.ViewNotificationUi"
+            android:exported="false" />
+        <activity
+            android:name=".activities.profileactivity.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.profileactivity.ViewStudentProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewPrePlacementUi"
+            android:exported="false" />
+        <activity
+            android:name=".activities.training.ViewTrainingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewTrainingUi"
+            android:exported="false" />
+        <activity
+            android:name=".activities.placementopprtunityactivity.ViewPlacementOpportunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.companyactivity.ViewCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewCompanyUi"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewPlacementOpportunityUi"
+            android:exported="false" />
+        <activity
+            android:name=".activities.profileactivity.EditStudentProfileActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.ForgotPasswordActivity"
             android:exported="false" />
@@ -25,6 +57,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -36,10 +69,9 @@
             android:name=".activities.SignUpActivity"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".firebasecloudmessaging.FirebaseMessagingService" />
 
         <meta-data
             android:name="preloaded_fonts"
