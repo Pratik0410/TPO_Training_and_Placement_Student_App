@@ -19,13 +19,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.tpo_training_and_placement_student.R;
-import com.example.tpo_training_and_placement_student.firebasecloudmessaging.FirebaseNotificationSender;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.karumi.dexter.Dexter;
@@ -60,8 +58,6 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-
-        Objects.requireNonNull(getSupportActionBar()).hide();
 
         constraintLayout = findViewById(R.id.id_constraint_layout_in_activity_sign_up);
         arrowBackImageView = findViewById(R.id.id_arrow_back_image_view_in_activity_sign_up);
