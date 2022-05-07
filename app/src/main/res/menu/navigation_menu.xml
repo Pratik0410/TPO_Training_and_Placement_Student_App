@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/id_nav_training_menu_item_in_navigation_menu"
+        android:icon="@drawable/nav_training"
+        android:title="@string/training_text" />
+    <item
+        android:id="@+id/id_nav_placement_opportunity_menu_item_in_navigation_menu"
+        android:icon="@drawable/nav_placement_opportunity"
+        android:title="@string/placement_opportunities_text" />
+    <item
+        android:id="@+id/id_nav_list_of_company_menu_item_in_navigation_menu"
+        android:icon="@drawable/nav_list_of_company"
+        android:title="@string/list_of_company_text" />
+    <item
+        android:id="@+id/id_nav_placement_history_menu_item_in_navigation_menu"
+        android:icon="@drawable/nav_placement_history"
+        android:title="@string/placement_history_text" />
+    <item
+        android:id="@+id/id_nav_pre_placement_menu_item_in_navigation_menu"
+        android:icon="@drawable/nav_pre_placement"
+        android:title="@string/pre_placement_text" />
+    <item
+        android:id="@+id/id_nav_logout_menu_item_in_navigation_menu"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout_text" />
+</menu>
