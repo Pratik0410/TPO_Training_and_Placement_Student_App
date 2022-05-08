@@ -26,18 +26,28 @@
             app:menu="@menu/menu"
             app:navigationIcon="@drawable/ic_nav" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
             android:id="@+id/id_banner_recycler_view_in_activity_main"
             android:layout_width="wrap_content"
             android:layout_height="220dp"
             android:layout_marginTop="10dp"
             android:background="#1E0B69DB"
-            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/id_material_toolbar_in_activity_main">
+            app:layout_constraintTop_toBottomOf="@+id/id_material_toolbar_in_activity_main"/>
 
-        </androidx.recyclerview.widget.RecyclerView>
+        <!-- <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/id_banner_recycler_view_in_activity_main"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="220dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="#1E0B69DB"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/id_material_toolbar_in_activity_main">-->
+
+<!--        </androidx.recyclerview.widget.RecyclerView>-->
 
         <androidx.cardview.widget.CardView
             android:id="@+id/id_companies_card_view_in_activity_main"
@@ -287,14 +297,14 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-   <com.google.android.material.navigation.NavigationView
-        android:id="@+id/id_navigation_view_in_activity_main"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:itemTextAppearance="@font/abhaya_libre"
-        app:itemIconSize="20dp"
-        app:headerLayout="@layout/navigation_header"
-        app:menu="@menu/navigation_menu"
-        android:fitsSystemWindows="true"/>
+<!--   <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/id_navigation_view_in_activity_main"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        app:itemTextAppearance="@font/abhaya_libre"-->
+<!--        app:itemIconSize="20dp"-->
+<!--        app:headerLayout="@layout/navigation_header"-->
+<!--        app:menu="@menu/navigation_menu"-->
+<!--        android:fitsSystemWindows="true"/>-->
 </androidx.drawerlayout.widget.DrawerLayout>

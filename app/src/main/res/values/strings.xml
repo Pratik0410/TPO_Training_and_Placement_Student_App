@@ -79,6 +79,8 @@
     <string name="hint_average_lpa">Average LPA</string>
     <string name="batch_text">Batch</string>
     <string name="training_and_placement_report_text">Training and Placement History Report</string>
+    <string name="details_text">Details</string>
+    <string name="link_text">Link</string>
 
 
 </resources>
