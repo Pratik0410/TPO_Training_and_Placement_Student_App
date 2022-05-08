@@ -81,6 +81,7 @@
     <string name="training_and_placement_report_text">Training and Placement History Report</string>
     <string name="details_text">Details</string>
     <string name="link_text">Link</string>
+    <string name="colon_text">:</string>
 
 
 </resources>

@@ -14,7 +14,19 @@
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/id_edit_profile_image_view_in_activity_view_student_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_edit"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/id_profile_image_view_in_activity_view_student_profile"
@@ -26,7 +38,8 @@
         android:src="@drawable/ic_profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -83,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/abhaya_libre"
-                android:text=":"
+                android:text="@string/colon_text"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="24sp"
@@ -123,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/abhaya_libre"
-                android:text=":"
+                android:text="@string/colon_text"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="24sp"
@@ -163,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/abhaya_libre"
-                android:text=":"
+                android:text="@string/colon_text"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="24sp"
