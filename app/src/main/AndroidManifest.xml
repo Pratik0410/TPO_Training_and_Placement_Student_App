@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TPO_Training_and_Placement_Student">
         <activity
+            android:name=".activities.placementhistory.ViewPlacementHistoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ViewNotificationUi"
             android:exported="false" />
         <activity

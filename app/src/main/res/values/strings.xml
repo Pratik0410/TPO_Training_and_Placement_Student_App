@@ -40,7 +40,15 @@
     <string name="product_or_service_of_company_text">Product/Service of Company</string>
     <string name="about_text">About</string>
     <string name="contact_details_text">Contact Details</string>
-    <string name="companies_text">Companies</string>
+    <string name="companies_text">Companies</string>    <string name="artificial_intelligence_machine_learning_text">AI/ML</string>
+    <string name="civil_engineering_text">CE</string>
+    <string name="chemical_engineering_text">CH</string>
+    <string name="computer_technology_text">CM</string>
+    <string name="mechanical_engineering_text">ME</string>
+    <string name="information_technology_text">IT</string>
+    <string name="electrical_engineering_text">EJ</string>
+    <string name="number_of_students_placed_hint">No.of Students Placed</string>
+
     <string name="Role_text">Role</string>
     <string name="location_text">Location</string>
     <string name="summary_text">Summary</string>
@@ -62,6 +70,15 @@
     <string name="new_password_text">New Password</string>
     <string name="confirm_new_password_text">Confirm New Password</string>
     <string name="notification_text">Notification</string>
+    <string name="notice_date_text">Date</string>
+    <string name="hint_year">Year</string>
+    <string name="sr_no_text">Sr No.</string>
+    <string name="hint_company_name">Company name</string>
+    <string name="total_text">Total</string>
+    <string name="hint_total_lpa">Total LPA</string>
+    <string name="hint_average_lpa">Average LPA</string>
+    <string name="batch_text">Batch</string>
+    <string name="training_and_placement_report_text">Training and Placement History Report</string>
 
 
 </resources>
