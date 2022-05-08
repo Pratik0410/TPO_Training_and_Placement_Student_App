@@ -31,7 +31,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/abhaya_libre"
-            android:text="@string/company_name_text"
+            android:hint="@string/company_name_text"
+            android:textColorHint="@color/black"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -47,7 +48,7 @@
             android:src="@drawable/ic_baseline_expand_more_24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <!--The following is the expandable portion whose
                 visibility is initially set to 'gone'.
@@ -65,16 +66,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/id_company_name_text_view_in_model_pre_placement_card">
 
-
-            Child LinearLayout 1
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/abhaya_libre"
-                android:text="Details"
+                android:text="@string/details_text"
                 android:textColor="#000000"
                 android:textSize="24sp" />
 
@@ -85,9 +83,9 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/abhaya_libre"
-                android:hint="Details"
+                android:hint="@string/details_text"
                 android:textColor="#000000"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -95,7 +93,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/abhaya_libre"
-                android:text="Link"
+                android:text="@string/link_text"
                 android:textColor="#000000"
                 android:textSize="24sp" />
 
@@ -106,9 +104,9 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/abhaya_libre"
-                android:hint="Link"
+                android:hint="@string/link_text"
                 android:textColor="@color/blue"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
         </LinearLayout>
 
