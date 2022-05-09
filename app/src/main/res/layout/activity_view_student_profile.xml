@@ -51,6 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/id_profile_image_view_in_activity_view_student_profile">
 
         <TextView
+            android:id="@+id/id_student_name_text__view_in_activity_view_student_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -103,6 +104,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/id_student_email_text_view_in_activity_view_student_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -143,6 +145,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/id_student_phone_no_text_view_in_activity_view_student_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -183,6 +186,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/id_student_branch_text_view_in_activity_view_student_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"

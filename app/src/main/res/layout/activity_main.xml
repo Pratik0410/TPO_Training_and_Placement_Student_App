@@ -297,14 +297,14 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--   <com.google.android.material.navigation.NavigationView-->
-<!--        android:id="@+id/id_navigation_view_in_activity_main"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="start"-->
-<!--        app:itemTextAppearance="@font/abhaya_libre"-->
-<!--        app:itemIconSize="20dp"-->
-<!--        app:headerLayout="@layout/navigation_header"-->
-<!--        app:menu="@menu/navigation_menu"-->
-<!--        android:fitsSystemWindows="true"/>-->
+   <com.google.android.material.navigation.NavigationView
+        android:id="@+id/id_navigation_view_in_activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemTextAppearance="@font/abhaya_libre"
+        app:itemIconSize="20dp"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu"
+        android:fitsSystemWindows="true"/>
 </androidx.drawerlayout.widget.DrawerLayout>
