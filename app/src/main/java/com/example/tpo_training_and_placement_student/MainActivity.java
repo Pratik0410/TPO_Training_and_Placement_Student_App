@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.tpo_training_and_placement_student.activities.LoginActivity;
 import com.example.tpo_training_and_placement_student.activities.profileactivity.EditStudentProfileActivity;
 import com.example.tpo_training_and_placement_student.activities.profileactivity.ViewStudentProfileActivity;
+import com.example.tpo_training_and_placement_student.activities.training.ViewTrainingActivity;
 import com.example.tpo_training_and_placement_student.ui.ViewCompanyUi;
 import com.example.tpo_training_and_placement_student.ui.ViewPlacementOpportunityUi;
 import com.example.tpo_training_and_placement_student.ui.ViewPrePlacementUi;
@@ -108,6 +109,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         constraintLayout.setOnClickListener(view -> {
             startActivity(new Intent(MainActivity.this,ViewStudentProfileActivity.class));
             drawerLayout.close();
+        });
+
+        trainingCardView.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, ViewTrainingUi.class));
         });
 
     }
