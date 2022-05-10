@@ -25,6 +25,7 @@
         android:elevation="8dp"
         android:src="@drawable/ic_profile"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -111,7 +112,7 @@
             app:startIconDrawable="@drawable/ic_phone_no">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/id_password_edit_text_in_activity_edit_student_profile"
+                android:id="@+id/id_phone_no_edit_text_in_activity_edit_student_profile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/abhaya_libre"
