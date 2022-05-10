@@ -82,6 +82,7 @@
     <string name="details_text">Details</string>
     <string name="link_text">Link</string>
     <string name="colon_text">:</string>
+    <string name="notice_file_text">Notice File</string>
 
 
 </resources>
